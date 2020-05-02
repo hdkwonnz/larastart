@@ -1,0 +1,99 @@
+//////////////////////////////larastart 따라 하기. 05/06/2019////////////////////////////////////////////////////////////////
+/////(https://www.youtube.com/watch?v=wM4L_yDGqpo&list=PLB4AdipoHpxaHDLIaMdtro1eXnQtl_UvE&index=1)////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+- new laravel package download 하기(ubuntu ==> cd Code)
+    "laravel new larastart" type
+     RuntimException error 나면 "composer clear-cache" enter
+
+- npm install 하기
+   "yarn install --no-bin-links" type
+
+- npm run watch 시작하기
+   "npm run watch" type
+   *****npm run  watch 시에 Error: https://registry.npmjs.org/vue-template-compiler: ETIMEDOUT
+   *****나오면 git bash를 close 후  git bash를 다시 open 할것.
+
+- adminlte 설치하기
+    https://adminlte.io/docs/2.4/installation 참조.
+    /////////"npm install admin-lte@3.0.0-alpha.2 --save" type//////이렇게하면 error나서 아래 방법으로 install
+    "yarn add admin-lte@3.0.0-alpha.2 --save" type ////install이 아니고 add를 사용한다...////
+
+- icon download
+    https://www.flaticon.com/free-icon/customer-support_1055675
+
+- font awsome install
+   https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers
+   npm install --save-dev @fortawesome/fontawesome-free 혹은(error 나오면 yarn으로 할것)
+  yarn add --dev @fortawesome/fontawesome-free
+
+- fontawsome copy path
+   https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+- fontawsome icon copy
+   https://fontawesome.com/icons?d=gallery
+
+- vue router install
+    https://router.vuejs.org/  ==> installation==>yarn add vue-router
+
+- copy html from adminlte
+    https://adminlte.io/themes/dev/AdminLTE/pages/tables/simple.html
+
+- vform install
+    https://github.com/cretueusebiu/vform==>install==>yarn add axios vform --no-bin-links
+                       (npm install axios vform으로 하면  "EPROTO: protocol error, symlink '.. error 나옴)
+
+- php artisan make:controller API/UserController --api
+
+- axios example site
+    https://github.com/axios/axios
+
+- https://vuejs.org/v2/guide/filters
+
+- momentjs install
+    https://momentjs.com/==>install==>yarn add moment --no-bin-links
+    (yarn add moment으로 하면  "EPROTO: protocol error, symlink '.. error 나옴)
+
+- progress bar install
+    https://github.com/hilongjw/vue-progressbar==>install==>yarn add vue-progressbar --no-bin-links
+
+-  sweet alert install
+    https://sweetalert2.github.io/#download==>install==>yarn add sweetalert2 --no-bin-links
+
+-  passport key:
+   Client ID: 1
+   Client secret: SSCcBGL5qZI0Ajqn8BrDwqxXijrEWVInWIOgt3Kt
+   Password grant client created successfully.
+   Client ID: 2
+   Client secret: ZwNNFTvRtLr7q7hDZzzBbl8Gmnq8OXD4yd925y0G
+
+- https://adminlte.io/themes/AdminLTE/pages/widgets.html
+
+- intervention install
+    http://image.intervention.io/getting_started/installation
+         composer require intervention/image(이렇게 해야함)
+         php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"
+
+- https://undraw.co/illustrations
+
+- https://www.vuetable.com/
+
+- vue pagination install
+    https://github.com/gilbitron/laravel-vue-pagination==>install==>yarn add laravel-vue-pagination
+
+- socialite install
+    http://larastart.com 으로 test 할것(larastart.test로 하지 말 것)
+    https://www.youtube.com/watch?v=NK9OoqaoiC8
+    (https://console.developers.google.com)
+    (https://www.youtube.com/watch?v=0y0N75gkLb4)
+    (https://www.youtube.com/watch?v=eX73xBE7V-0)
+    **google은 client id 얻은게 까다로워 잠시 보류
+    https://github.com/hdkwonnz ==> Wxxkhd711002*
+    https://developers.naver.com/apps/#/wizard/register
+    https://developers.naver.com/apps/#/myapps/vatZWASt4RCFlKw2jQmF/overview
+    https://developers.kakao.com/
+    https://developers.facebook.com/
+    https://www.youtube.com/watch?v=rNjprfQ2Ud4
+    ****naver social login시에 Undefined index: nickname,  Undefined index: profile_image 에러가 나오면
+    ****vendor/socialiteproviders/naver/NaverProvider.php/protected function mapUserToObject(array $user)
+    ****'nickname' => (isset($user['nickname']))?$user['nickname']:"", (//'nickname' => $user['nickname'],)
+    ****'avatar' => (isset($user['profile_image']))?$user['profile_image']:"",(//'avatar'   => $user['profile_image'],)
+    ****naver search해서 참고할것...
